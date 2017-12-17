@@ -1,2 +1,2 @@
-# ee_analysis
+# EE Analysis
 Visualizations for album Spotify stats
