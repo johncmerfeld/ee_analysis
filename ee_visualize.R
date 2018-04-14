@@ -1,4 +1,4 @@
-setwd("Documents/Code/ee_analysis/")
+setwd("~/Documents/Code/ee_analysis/")
 library(ggplot2)
 library(data.table)
 library(reshape2)
