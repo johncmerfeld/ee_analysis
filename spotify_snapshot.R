@@ -8,5 +8,9 @@ ggplot(songs,
            y = saves)) +
   geom_point(alpha = 0.5,
              aes(color = as.factor(release_date),
-                 size = as.numeric(listeners)))
+                 size = as.numeric(listeners))) +
+  scale_size_continuous("Unique listeners",
+                        range = c(1,10),
+                        trans = "identity") +
+  scale_color_discrete("Release Date")
  
