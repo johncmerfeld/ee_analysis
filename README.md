@@ -1,2 +1,2 @@
 # EE Analysis
-Visualizations for album Spotify stats
+Visualizations for Spotify stats and other musical analysis
