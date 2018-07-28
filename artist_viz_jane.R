@@ -1,9 +1,23 @@
 
 
-setwd("/Users/johncmerfeld/Documents/Code/R")
+setwd("/Users/johncmerfeld/Documents/Code/ee_analysis/data")
 library(data.table)
 library(ggplot2)
-artists <- fread("band_data.csv")
+library(sqldf)
+artists <- fread("jane_artists.csv")
+
+artists_df <- data.table(sqldf("
+      
+SELECT
+
+  AVG(`Years of Fandom`) AS avg_years_of_fandom,
+  `Musical Style` AS musical_style
+
+FROM artists
+GROUP BY `Musical Style`
+ORDER BY `Years of Fandom`
+      
+      "))
 
 ggplot(artists,
        aes(x = history,
