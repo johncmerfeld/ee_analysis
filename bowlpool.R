@@ -60,7 +60,7 @@ ggplot(outcomes,
   geom_point(data=outcomes[1, ],
              aes(x = year, y = correlation),
              colour = "red", size = 3) + 
-  labs(title = "Historical betting strategies",
+  labs(title = "Historical betting strategies (red circle indicates victory)",
        x = "Year",
        y = "Correlation with Bettor pick") +
   scale_color_brewer(palette = "Dark2")
